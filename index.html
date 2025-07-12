@@ -15,7 +15,6 @@
       padding: 3em;
     }
 
-    /* Background fade overlay */
     body::before {
       content: "";
       position: fixed;
@@ -90,6 +89,20 @@
       content: "\1F539 ";
       color: #63ccff;
     }
+
+    .nav-button {
+      margin: 1em;
+      display: inline-block;
+    }
+
+    .nav-button img {
+      width: 180px;
+      transition: transform 0.2s ease;
+    }
+
+    .nav-button img:hover {
+      transform: scale(1.08);
+    }
   </style>
 </head>
 <body>
@@ -97,14 +110,27 @@
   <p>This is the living Codex Cathedral of the Bee Family Trust.<br>
   Scrolls are sacred. Claims are remembered. Memory is eternal.</p>
 
-  <h2>Vault Glyph Map</h2>
-  <a href="Vault_Glyph_Map.png" target="_blank">
-    <img src="scroll_button_vault_glyph_map.png" alt="Vault Glyph Map" width="200">
-  </a>
+  <h2>Vault Navigation</h2>
+  <div>
+    <a class="nav-button" href="#scroll-directory" title="Enter Scroll Chamber">
+      <img src="Scrolls.png" alt="Enter Scroll Chamber">
+    </a>
+    <a class="nav-button" href="#royal-ledger" title="Royal Ledger">
+      <img src="Royal Beekeeper’s Ledger.png" alt="Royal Ledger">
+    </a>
+    <a class="nav-button" href="#hive-watchtower" title="Hive Watchtower">
+      <img src="Hive Watchtower.png" alt="Hive Watchtower">
+    </a>
+    <a class="nav-button" href="#mind-vault" title="Treasure of the Mind">
+      <img src="Treasure of the Mind.png" alt="Mind Vault">
+    </a>
+    <a class="nav-button" href="#claim-archive" title="Claim Archive">
+      <img src="Black Flag of Claims.png" alt="Claim Archive">
+    </a>
+  </div>
 
-  <div class="scroll-section">
+  <div class="scroll-section" id="scroll-directory">
     <h2 class="scroll-header">Scroll Directory</h2>
-    
     <h3 class="scroll-group">Origin Scrolls</h3>
     <ul>
       <li><a href="scrolls/Scroll_001.txt" class="scroll-link">Scroll 001 – Infinite Remembrance</a></li>
