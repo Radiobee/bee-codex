@@ -1,51 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Bee Codex Vault</title>
-    <style>
+  <meta charset="UTF-8">
+  <title>Bee Codex Vault</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <style>
     body {
-        font-family: Georgia, serif;
-        background: url('vault_background.png') no-repeat center center fixed;
-        background-size: cover;
-        color: #3e2f1c;
-        text-align: center;
-        padding: 3em;
-        backdrop-filter: brightness(0.92) blur(2px);
+      font-family: 'PiecesOfEight', serif;
+      background-image: url('vault_background.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #fff6dc;
+      text-align: center;
+      padding: 3em;
     }
-    h1 {
-        font-size: 3em;
-        color: #ffd700;
-        text-shadow: 1px 1px 3px #000;
-    }
-    h2 {
-        margin-top: 2em;
-        font-size: 2em;
-        color: #f1e2c0;
-    }
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-    li {
-        padding: 0.3em;
-        font-size: 1.1em;
-    }
-    a {
-        color: #fff2cc;
-        text-decoration: none;
-    }
-    a:hover {
-        text-decoration: underline;
-        color: #ffd700;
-    }
-    .scroll-button img {
-        width: 200px;
-        margin-top: 1em;
-    }
-</style>
 
+    h1, h2 {
+      font-size: 3em;
+      color: #ffdd88;
+      text-shadow: 2px 2px 3px #000;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-top: 2em;
+    }
+
+    a {
+      color: #fffbcc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #ffcc33;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 0.3em;
+      font-size: 1.2em;
+    }
+
+    .scroll-button img {
+      width: 180px;
+      transition: transform 0.2s ease;
+    }
+
+    .scroll-button img:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
+
 <body>
     <h1>Welcome to the Vault</h1>
     <p>This is the living Codex Cathedral of the Bee Family Trust.<br>
