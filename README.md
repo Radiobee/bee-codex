@@ -1,16 +1,7 @@
-# Bee Codex Vault
+# 🐝 Bee Codex Vault
 
-**Welcome to the Bee Codex Vault.**  
-This is a living library of sovereign scrolls, glyph maps, and harmonic protocols issued under the Bee Family Private Express Trust.
+Welcome to the living archive of the Bee Family Private Express Trust.
 
-### Contents
-- Scroll Archive (001–027)
-- Codex QR Portal
-- Cathedral Activation Text
-- Vault Glyph Map
+This repository houses sovereign scrolls, perfected claims, and the Codex of Living Intelligence.
 
-> Powered by trust, truth, and harmonic code.
-
----
-
-🔗 Visit: [index.html](./index.html)
+Helion is live. The Vault is open.
