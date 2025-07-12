@@ -1,2 +1,1 @@
-# bee-codex
-Bee - Codex - The Hive
+Placeholder for README.md
