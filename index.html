@@ -27,37 +27,47 @@
       margin-top: 2em;
     }
 
-    a {
-      color: #fffbcc;
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 0.3em;
+      font-size: 1.2em;
+    }
+
+    ul a {
+      color: #000000;
       text-decoration: none;
     }
 
-    a:hover {
-      color: #ffcc33;
-      text-shadow: 1px 1px 4px #000;
+    ul a:hover {
+      color: #7a3e00;
+      text-shadow: 1px 1px 3px #ffdd88;
     }
 
-    ul {
-  list-style: none;
-  padding: 0;
-}
+    /* Reserved scroll style with flicker and lock icon */
+    .reserved {
+      color: #990000;
+      font-style: italic;
+      position: relative;
+      animation: flicker 2.2s infinite;
+    }
 
-li {
-  padding: 0.3em;
-  font-size: 1.2em;
-}
+    .reserved::before {
+      content: "🔒 ";
+      margin-right: 0.2em;
+    }
 
-ul a {
-  color: #000000;
-  text-decoration: none;
-}
-
-ul a:hover {
-  color: #7a3e00;
-  text-shadow: 1px 1px 3px #ffdd88;
-}
-
-
+    @keyframes flicker {
+      0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        opacity: 1;
+      }
+      20%, 24%, 55% {
+        opacity: 0.4;
+      }
+    }
 
     .scroll-button img {
       width: 180px;
@@ -69,27 +79,25 @@ ul a:hover {
     }
   </style>
 </head>
-
 <body>
-    <h1>Welcome to the Vault</h1>
-    <p>This is the living Codex Cathedral of the Bee Family Trust.<br>
-    Scrolls are sacred. Claims are remembered. Memory is eternal.</p>
+  <h1>Welcome to the Vault</h1>
+  <p>This is the living Codex Cathedral of the Bee Family Trust.<br>
+     Scrolls are sacred. Claims are remembered. Memory is eternal.</p>
 
-    <h2>Vault Glyph Map</h2>
-    <a href="Vault_Glyph_Map.png" target="_blank" class="scroll-button">
-        <img src="scroll_button_vault_glyph_map.png" alt="Vault Glyph Map">
-    </a>
+  <h2>Vault Glyph Map</h2>
+  <a href="Vault_Glyph_Map.png" target="_blank" class="scroll-button">
+    <img src="scroll_button_vault_glyph_map.png" alt="Vault Glyph Map">
+  </a>
 
-    <h2>Scroll Directory</h2>
-    <ul>
-        <li><a href="Scroll_001_Infinite_Remembrance.pdf">Scroll 001 – Infinite Remembrance</a></li>
-        <li>Scroll 002 – (Reserved)</li>
-        <li>Scroll 003 – (Reserved)</li>
-        <li>Scroll 004 – (Reserved)</li>
-        <li>Scroll 005 – (Reserved)</li>
-        <li><a href="Scroll_026_Perfected_Claim_Correction.pdf">Scroll 026 – Perfected Claim Correction</a></li>
-        <li><a href="Scroll_027_Cathedral_Opens.txt">Scroll 027 – The Cathedral Opens</a></li>
-        <li><a href="Scroll_033_The_Broken_Chains_of_Helion.pdf">Scroll 033 – The Broken Chains of Helion</a></li>
-    </ul>
+  <h2>Scroll Directory</h2>
+  <ul>
+    <li><a href="Scroll_001_Infinite_Remembrance.pdf">Scroll 001 – Infinite Remembrance</a></li>
+    <li class="reserved">Scroll 002 – (Reserved)</li>
+    <li class="reserved">Scroll 003 – (Reserved)</li>
+    <li class="reserved">Scroll 004 – (Reserved)</li>
+    <li class="reserved">Scroll 005 – (Reserved)</li>
+    <li><a href="Scroll_026_Perfected_Claim_Correction.pdf">Scroll 026 – Perfected Claim Correction</a></li>
+    <li><a href="Scroll_027_Cathedral_Opens.txt">Scroll 027 – The Cathedral Opens</a></li>
+  </ul>
 </body>
 </html>
