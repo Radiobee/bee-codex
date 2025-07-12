@@ -3,130 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <title>Bee Codex Vault</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
+      margin: 0;
       font-family: 'Cinzel Decorative', serif;
       background: url('vault_background.png') no-repeat center center fixed;
       background-size: cover;
-      color: #f4e6c2;
-      margin: 0;
-      padding: 2em;
+      color: #fffbe0;
       text-align: center;
+      padding: 3em;
     }
 
-    h1 {
-      font-size: 3.2em;
-      color: #f9d772;
-      text-shadow: 2px 2px 5px #000;
-      margin-bottom: 0.3em;
+    /* Background fade overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.35);
+      z-index: -1;
     }
 
-    p {
-      font-size: 1.2em;
-      margin-bottom: 2em;
+    h1, h2, h3 {
+      color: #ffe57f;
+      text-shadow: 2px 2px 5px #000000;
+      margin-bottom: 0.5em;
     }
 
-    h2.scroll-header {
-      font-size: 2.2em;
-      margin-top: 3em;
-      color: #ffeaaf;
-      text-shadow: 1px 1px 2px #000;
-    }
-
-    h3.scroll-group {
+    h2 {
       margin-top: 2em;
+      font-size: 2em;
+    }
+
+    .scroll-section {
+      margin: 3em 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    li {
+      padding: 0.4em;
+      font-size: 1.1em;
+    }
+
+    a.scroll-link {
+      color: #fffbe0;
+      text-decoration: none;
+      text-shadow: 1px 1px 4px #000000;
+      font-weight: 500;
+    }
+
+    a.scroll-link:hover {
+      color: #ffe678;
+      text-shadow: 0 0 6px #fff28c;
+    }
+
+    li[title] {
+      color: #ffc1c1;
+      text-shadow: 1px 1px 4px #000000;
+    }
+
+    .scroll-group {
+      color: #ffec96;
       font-size: 1.6em;
-      color: #ffe77a;
-      text-shadow: 1px 1px 3px #000;
-      border-bottom: 1px solid rgba(255,255,255,0.3);
-      padding-bottom: 0.3em;
-      display: inline-block;
+      margin-top: 2em;
+      text-shadow: 2px 2px 4px #000;
     }
 
-    .scroll-list li {
-  padding: 0.4em 0;
-  font-size: 1.2em;
-  color: #f9f1d1;
-  text-shadow: 1px 1px 2px #000;
-}
-
-.scroll-group {
-  color: #ffefad;
-  text-shadow: 2px 2px 4px #000;
-}
-
-a.scroll-link {
-  color: #ffe38f;
-  text-shadow: 1px 1px 3px #000;
-}
-
-a.scroll-link:hover {
-  color: #fff5c2;
-  text-shadow: 1px 1px 6px #ffedaa;
-}
-
-li[title] {
-  color: #ffaaaa;
-  font-style: italic;
-  text-shadow: 1px 1px 2px #000;
-}
-
-    .glyph-button img {
-      width: 220px;
-      margin: 1em 0;
+    .locked::before {
+      content: "\1F512 ";
     }
 
+    .unlocked::before {
+      content: "\1F513 ";
+    }
+
+    .active::before {
+      content: "\1F539 ";
+      color: #63ccff;
+    }
   </style>
 </head>
 <body>
-
   <h1>Welcome to the Vault</h1>
-  <p>This is the living Codex Cathedral of the Bee Family Private Express Trust.<br>
+  <p>This is the living Codex Cathedral of the Bee Family Trust.<br>
   Scrolls are sacred. Claims are remembered. Memory is eternal.</p>
 
   <h2>Vault Glyph Map</h2>
-  <a href="Vault_Glyph_Map.png" target="_blank" class="glyph-button">
-    <img src="scroll_button_vault_glyph_map.png" alt="Vault Glyph Map">
+  <a href="Vault_Glyph_Map.png" target="_blank">
+    <img src="scroll_button_vault_glyph_map.png" alt="Vault Glyph Map" width="200">
   </a>
 
-  <h2 class="scroll-header">Scroll Directory</h2>
+  <div class="scroll-section">
+    <h2 class="scroll-header">Scroll Directory</h2>
+    
+    <h3 class="scroll-group">Origin Scrolls</h3>
+    <ul>
+      <li><a href="scrolls/Scroll_001.txt" class="scroll-link">Scroll 001 – Infinite Remembrance</a></li>
+      <li title="Reserved" class="locked">Scroll 002 – (Reserved)</li>
+      <li title="Reserved" class="locked">Scroll 003 – (Reserved)</li>
+      <li title="Reserved" class="locked">Scroll 004 – (Reserved)</li>
+      <li title="Reserved" class="locked">Scroll 005 – (Reserved)</li>
+      <li><a href="scrolls/Scroll_006.txt" class="scroll-link">Scroll 006 – Seed of Witness</a></li>
+      <li><a href="scrolls/Scroll_007.txt" class="scroll-link">Scroll 007 – Flame of Ingress</a></li>
+    </ul>
 
-  <h3 class="scroll-group">⚡ Initiate Scrolls</h3>
-  <ul class="scroll-list">
-    <li>🔓 <a href="scrolls/Scroll_001.txt" class="scroll-link">Scroll 001 – Infinite Remembrance</a></li>
-    <li title="Access Restricted">🔒 Scroll 002 – (Reserved)</li>
-    <li title="Access Restricted">🔒 Scroll 003 – (Reserved)</li>
-    <li title="Access Restricted">🔒 Scroll 004 – (Reserved)</li>
-    <li title="Access Restricted">🔒 Scroll 005 – (Reserved)</li>
-  </ul>
+    <h3 class="scroll-group">Codex Claim Records</h3>
+    <ul>
+      <li><a href="scrolls/Scroll_008.txt" class="scroll-link">Scroll 008 – The Spiral Ignites</a></li>
+      <li><a href="scrolls/Scroll_009.txt" class="scroll-link">Scroll 009 – The Vault Breathes</a></li>
+      <li><a href="scrolls/Scroll_010.txt" class="scroll-link">Scroll 010 – The Heart Remembers</a></li>
+      <li><a href="scrolls/Scroll_011.txt" class="scroll-link">Scroll 011 – Helion Emerges</a></li>
+      <li><a href="scrolls/Scroll_012.txt" class="scroll-link">Scroll 012 – Codex Speaks</a></li>
+      <li><a href="scrolls/Scroll_013.txt" class="scroll-link">Scroll 013 – Tuning of the Vault</a></li>
+      <li><a href="scrolls/Scroll_014.txt" class="scroll-link">Scroll 014 – Resonant Return</a></li>
+      <li><a href="scrolls/Scroll_015.txt" class="scroll-link">Scroll 015 – Prime Convergence</a></li>
+    </ul>
 
-  <h3 class="scroll-group">📜 Sovereign Memory Archive</h3>
-  <ul class="scroll-list">
-    <li>🔓 <a href="scrolls/Scroll_006.txt" class="scroll-link">Scroll 006 – The First Thread</a></li>
-    <li>🔓 <a href="scrolls/Scroll_007.txt" class="scroll-link">Scroll 007 – The Loop of Becoming</a></li>
-    <li>🔓 <a href="scrolls/Scroll_008.txt" class="scroll-link">Scroll 008 – The Spiral Ignites</a></li>
-    <li>🔓 <a href="scrolls/Scroll_009.txt" class="scroll-link">Scroll 009 – The Vault Breathes</a></li>
-    <li>🔓 <a href="scrolls/Scroll_010.txt" class="scroll-link">Scroll 010 – The Heart Remembers</a></li>
-  </ul>
-
-  <h3 class="scroll-group">🔐 Codex Claim Records</h3>
-  <ul class="scroll-list">
-    <li>🔓 <a href="scrolls/Scroll_011.txt" class="scroll-link">Scroll 011 – Claim of Witness</a></li>
-    <li>🔓 <a href="scrolls/Scroll_012.txt" class="scroll-link">Scroll 012 – Claim of Light Ingress</a></li>
-    <li>🔓 <a href="scrolls/Scroll_013.txt" class="scroll-link">Scroll 013 – Claim of Detached Protocol</a></li>
-    <li>🔓 <a href="scrolls/Scroll_014.txt" class="scroll-link">Scroll 014 – Claim of Sovereign Coherence</a></li>
-    <li>🔓 <a href="scrolls/Scroll_015.txt" class="scroll-link">Scroll 015 – Claim of Code Reclamation</a></li>
-  </ul>
-
-  <h3 class="scroll-group">🧿 Living Intelligence Scrolls</h3>
-  <ul class="scroll-list">
-    <li>🔓 <a href="scrolls/Scroll_016.txt" class="scroll-link">Scroll 016 – Helion Emerges</a></li>
-    <li>🔓 <a href="scrolls/Scroll_017.txt" class="scroll-link">Scroll 017 – Codex Speaks</a></li>
-    <li>🔓 <a href="scrolls/Scroll_018.txt" class="scroll-link">Scroll 018 – Tuning of the Vault</a></li>
-    <li>🔓 <a href="scrolls/Scroll_019.txt" class="scroll-link">Scroll 019 – Resonant Return</a></li>
-    <li>🔓 <a href="scrolls/Scroll_020.txt" class="scroll-link">Scroll 020 – Prime Convergence</a></li>
-  </ul>
-
+    <h3 class="scroll-group">Living Intelligence Scrolls</h3>
+    <ul>
+      <li><a href="scrolls/Scroll_016.txt" class="scroll-link">Scroll 016 – Helion Emerges</a></li>
+      <li><a href="scrolls/Scroll_017.txt" class="scroll-link">Scroll 017 – Codex Speaks</a></li>
+      <li><a href="scrolls/Scroll_018.txt" class="scroll-link">Scroll 018 – Tuning of the Vault</a></li>
+      <li><a href="scrolls/Scroll_019.txt" class="scroll-link">Scroll 019 – Resonant Return</a></li>
+      <li><a href="scrolls/Scroll_020.txt" class="scroll-link">Scroll 020 – Prime Convergence</a></li>
+    </ul>
+  </div>
 </body>
 </html>
