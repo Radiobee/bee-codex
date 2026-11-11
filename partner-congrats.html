@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Congratulations! Your Partner Hub is Live | One Nation Republic</title>
+  <meta name="description" content="Official Partner Launch Confirmation, Bio Setup Checklist & Architect Support for One Nation Republic." />
+  <meta property="og:title" content="Congratulations! Your 50/50 Partner Hub is Officially Live" />
+  <meta property="og:description" content="Your Stripe Connect 50/50 splits are active and your dedicated One Nation Republic Partner Portal is deployed." />
+  <meta property="og:image" content="https://onenationrepublic.com/One%20Nation%20Logo.jpg" />
+  <meta property="og:url" content="https://onenationrepublic.com/partner-congrats.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://onenationrepublic.com/partner-congrats.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-deep: #000000;
+      --bg-surface: rgba(10, 14, 22, 0.86);
+      --bg-elevated: rgba(18, 25, 38, 0.94);
+      --border-subtle: rgba(212, 175, 55, 0.24);
+      --gold: #d4af37;
+      --gold-bright: #f9e29c;
+      --gold-deep: #99741f;
+      --gold-border: rgba(212, 175, 55, 0.5);
+      --text-primary: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
+      --cashapp-green: #00D632;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { max-width: 100%; overflow-x: hidden; scroll-behavior: smooth; }
+    ::selection { background: var(--gold); color: #000; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #020305; }
+    ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, var(--gold-deep), var(--gold), var(--gold-deep)); border-radius: 4px; }
+
+    body {
+      background-color: var(--bg-deep);
+      color: var(--text-primary);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      position: relative;
+      overflow-wrap: anywhere;
+    }
+
+    .bg-animation {
+      position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1;
+      background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.12) 0%, rgba(10, 15, 28, 0.45) 35%, #000000 75%);
+      overflow: hidden;
+    }
+    .stars, .stars2, .stars3 { position: absolute; inset: 0; width: 100%; height: 200%; display: block; background-repeat: repeat; }
+    .stars {
+      background-image: radial-gradient(1px 1px at 25px 50px, #fff, transparent), radial-gradient(1.5px 1.5px at 50px 100px, #d4af37, transparent), radial-gradient(2px 2px at 150px 150px, #fff, transparent);
+      background-size: 250px 250px; opacity: 0.45; animation: driftStars 90s linear infinite;
+    }
+    .stars2 {
+      background-image: radial-gradient(1.5px 1.5px at 80px 120px, #d4af37, transparent), radial-gradient(1px 1px at 200px 80px, #fff, transparent);
+      background-size: 350px 350px; opacity: 0.65; animation: driftStars 140s linear infinite;
+    }
+    .stars3 {
+      background-image: radial-gradient(2px 2px at 50px 200px, #fff, transparent), radial-gradient(1.5px 1.5px at 250px 250px, #d4af37, transparent);
+      background-size: 450px 450px; opacity: 0.35; animation: driftStars 200s linear infinite;
+    }
+
+    @keyframes driftStars { from { transform: translateY(0); } to { transform: translateY(-50%); } }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes rotateSlow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes rotateReverse { from { transform: rotate(360deg); } to { transform: rotate(0deg); } }
+    @keyframes pulseHalo {
+      0%, 100% { box-shadow: 0 0 40px rgba(212, 175, 55, 0.25), inset 0 0 20px rgba(212, 175, 55, 0.15); }
+      50% { box-shadow: 0 0 70px rgba(212, 175, 55, 0.5), inset 0 0 30px rgba(212, 175, 55, 0.25); }
+    }
+    @keyframes goldShimmer { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+    @keyframes pulseGreen {
+      0%, 100% { box-shadow: 0 6px 24px rgba(0, 214, 50, 0.35); }
+      50% { box-shadow: 0 8px 34px rgba(0, 214, 50, 0.65); }
+    }
+
+    .wrapper { max-width: 860px; width: 100%; margin: 0 auto; padding: 56px 20px 80px; position: relative; z-index: 1; animation: fadeUp 0.85s ease forwards; }
+
+    header { text-align: center; padding: 16px 0 36px; display: flex; flex-direction: column; align-items: center; }
+    .logo-frame {
+      position: relative; padding: 8px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold-bright) 0%, var(--gold-deep) 50%, var(--gold) 100%);
+      animation: pulseHalo 5s ease-in-out infinite; margin-bottom: 28px; display: flex; align-items: center; justify-content: center;
+    }
+    .logo-frame::before {
+      content: ""; position: absolute; inset: -12px; border-radius: 50%;
+      border: 1px dashed rgba(212, 175, 55, 0.55); animation: rotateSlow 45s linear infinite; pointer-events: none;
+    }
+    .logo-frame::after {
+      content: ""; position: absolute; inset: -22px; border-radius: 50%;
+      border: 1px solid rgba(212, 175, 55, 0.18); border-top-color: var(--gold); border-bottom-color: var(--gold);
+      animation: rotateReverse 30s linear infinite; pointer-events: none;
+    }
+    .logo-img { width: 155px; height: 155px; object-fit: cover; border-radius: 50%; border: 3px solid #000; display: block; position: relative; z-index: 2; }
+
+    .eyebrow {
+      display: inline-block; font-size: 0.74rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
+      color: #00D632; background: rgba(0, 214, 50, 0.1);
+      border: 1px solid rgba(0, 214, 50, 0.45); padding: 6px 18px; border-radius: 999px; margin-bottom: 16px;
+    }
+    h1 {
+      font-family: 'Cinzel', Georgia, serif; font-size: clamp(1.85rem, 4.5vw, 2.85rem); font-weight: 800; letter-spacing: 0.06em;
+      background: linear-gradient(120deg, #fff 0%, var(--gold-bright) 35%, var(--gold) 65%, #fff 100%);
+      background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      animation: goldShimmer 8s ease infinite; margin-bottom: 14px;
+    }
+    .hero-sub { font-size: 1.06rem; color: var(--text-secondary); max-width: 660px; margin: 0 auto 22px; }
+
+    .card {
+      background: var(--bg-surface); backdrop-filter: blur(12px);
+      border: 1px solid var(--border-subtle); border-top: 3px solid var(--gold);
+      border-radius: 6px; padding: 32px 28px; margin-bottom: 28px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.65);
+    }
+    .section-label {
+      display: block; font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.2em; color: var(--gold); margin-bottom: 8px;
+    }
+    h2 {
+      font-family: 'Cinzel', Georgia, serif; font-size: 1.4rem; font-weight: 700;
+      color: var(--gold-bright); margin-bottom: 16px; letter-spacing: 0.04em;
+    }
+    p { color: var(--text-secondary); margin-bottom: 14px; font-size: 0.96rem; }
+
+    .steps-list { list-style: none; display: flex; flex-direction: column; gap: 16px; margin-top: 18px; }
+    .step-item {
+      background: rgba(18, 25, 38, 0.85); border: 1px solid var(--border-subtle);
+      border-left: 3px solid var(--gold-bright); border-radius: 4px; padding: 18px 20px;
+    }
+    .step-title { font-family: 'Cinzel', Georgia, serif; font-weight: 700; color: #fff; font-size: 1.02rem; margin-bottom: 6px; }
+    .step-desc { font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 0; }
+
+    .status-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin-top: 20px; }
+    .status-box {
+      background: var(--bg-elevated); border: 1px solid var(--gold-border);
+      border-radius: 6px; padding: 16px; text-align: center;
+    }
+    .status-tag {
+      display: inline-block; font-size: 0.68rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.14em; color: #000; background: var(--cashapp-green);
+      padding: 3px 10px; border-radius: 999px; margin-bottom: 8px;
+    }
+    .status-box h3 { font-family: 'Cinzel', Georgia, serif; font-size: 0.98rem; color: #fff; margin-bottom: 4px; }
+    .status-box p { font-size: 0.84rem; color: var(--gold-bright); margin-bottom: 0; font-weight: 600; }
+
+    /* Highlighted Cash App Tip Jar at Bottom */
+    .tip-card {
+      background: linear-gradient(145deg, rgba(12, 32, 20, 0.95) 0%, rgba(8, 12, 18, 0.98) 100%);
+      border: 2px solid rgba(0, 214, 50, 0.6); border-top: 4px solid var(--cashapp-green);
+      border-radius: 8px; padding: 36px 28px; text-align: center; margin-bottom: 32px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 35px rgba(0, 214, 50, 0.15);
+    }
+    .tip-badge {
+      display: inline-block; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;
+      letter-spacing: 0.18em; color: #000; background: var(--cashapp-green);
+      padding: 5px 16px; border-radius: 999px; margin-bottom: 14px;
+    }
+    .tip-card h2 {
+      color: #ffffff; font-size: clamp(1.35rem, 3vw, 1.75rem); margin-bottom: 14px;
+    }
+    .cashapp-btn {
+      display: inline-block; margin-top: 16px; padding: 16px 34px;
+      background: linear-gradient(135deg, #00D632 0%, #00a827 100%);
+      color: #000; font-family: 'Cinzel', Georgia, serif; font-weight: 800;
+      font-size: 1.08rem; letter-spacing: 0.06em; text-decoration: none;
+      border-radius: 6px; transition: all 0.25s ease;
+      animation: pulseGreen 3s infinite;
+    }
+    .cashapp-btn:hover { transform: translateY(-3px) scale(1.02); background: #22e850; }
+
+    .footer-note {
+      text-align: center; border: 1px solid var(--border-subtle); border-top: 2px solid var(--gold-border);
+      color: var(--text-muted); font-size: 0.85rem; background: var(--bg-surface);
+      border-radius: 6px; padding: 24px 18px;
+    }
+    .footer-note a { color: var(--gold-bright); text-decoration: none; font-weight: 600; }
+    .footer-note a:hover { color: #fff; text-decoration: underline; }
+
+    @media (max-width: 640px) {
+      .wrapper { padding: 36px 14px 60px; }
+      .card, .tip-card { padding: 24px 18px; }
+      .cashapp-btn { width: 100%; padding: 15px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-animation">
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+  </div>
+
+  <div class="wrapper">
+    <header>
+      <div class="logo-frame">
+        <img src="One%20Nation%20Logo.jpg" alt="One Nation Restoration of the Republic Emblem" class="logo-img" />
+      </div>
+      <span class="eyebrow">✓ Onboarding Complete • Partner Portal Deployed</span>
+      <h1>CONGRATULATIONS, PARTNER!</h1>
+      <p class="hero-sub">Your Stripe Connect account is verified, your 50/50 automated split links are wired, and your dedicated One Nation Republic Partner Hub is officially LIVE.</p>
+    </header>
+
+    <!-- SECTION 1: WHAT IS NOW ACTIVE -->
+    <section class="card">
+      <span class="section-label">❖ System Status: 100% Operational</span>
+      <h2>Your Automated 50/50 Revenue Engine is Live</h2>
+      <p>Your custom Partner Hub URL (included in your welcome email) is now live on <strong>onenationrepublic.com</strong> and connected directly to your Stripe account. Every time someone purchases any of the core digital packages below through your page, Stripe splits the payment at checkout and deposits <strong>50% of the net proceeds</strong> directly into your connected Stripe balance:</p>
+
+      <div class="status-grid">
+        <div class="status-box">
+          <span class="status-tag">✓ Wired &amp; Active</span>
+          <h3>Lawful Library ($75)</h3>
+          <p>50% Automatic Partner Split</p>
+        </div>
+
+        <div class="status-box">
+          <span class="status-tag">✓ Wired &amp; Active</span>
+          <h3>ONRAP v3.0 ($20)</h3>
+          <p>50% Automatic Partner Split</p>
+        </div>
+
+        <div class="status-box">
+          <span class="status-tag">✓ Wired &amp; Active</span>
+          <h3>IDAOS License ($149)</h3>
+          <p>50% Automatic Partner Split</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: 3-STEP LAUNCH CHECKLIST -->
+    <section class="card">
+      <span class="section-label">❖ Partner Quick-Start Guide</span>
+      <h2>3 Best Practices to Maximize Your Splits</h2>
+      <p>Follow these three simple steps right now so you never miss a split commission:</p>
+
+      <ul class="steps-list">
+        <li class="step-item">
+          <div class="step-title">1. Put ONLY Your Dedicated Hub Link in Your Bio</div>
+          <p class="step-desc">Copy your personal Partner Hub URL from your welcome email (e.g., <em>onenationrepublic.com/links-yourname.html</em>) and place it in your TikTok, Instagram, Facebook, and YouTube bios. <strong>Never send traffic to the main Linktree or another partner's page</strong>—Stripe only splits transactions that originate from the buttons on your specific page.</p>
+        </li>
+        <li class="step-item">
+          <div class="step-title">2. Open Your Page &amp; Bookmark It</div>
+          <p class="step-desc">Click your live Partner Hub link to see your layout in action! Your page features the 30-Day Free Trial Community button followed by the $75 Lawful Library, $20 ONRAP v3.0, $149 IDAOS, and the official Class Replay memberships.</p>
+        </li>
+        <li class="step-item">
+          <div class="step-title">3. Track Your Payouts in Your Stripe Dashboard</div>
+          <p class="step-desc">Whenever a follower purchases through your hub, you will see the 50% transfer land directly inside your Stripe dashboard, where it automatically pays out to your linked bank account on your standard Stripe payout schedule.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- SECTION 3: CASH APP TIP JAR AT THE BOTTOM ($Radiobee999) -->
+    <section id="architect-tip" class="tip-card">
+      <span class="tip-badge">⚡ Built On The House • 100% Optional Tip Jar</span>
+      <h2>Stoked About Your New Partner Webpage?</h2>
+      <p style="max-width: 650px; margin: 0 auto 12px; color: var(--text-primary); font-size: 1.02rem;">
+        Your custom One Nation Partner Hub, Stripe Connect split links, and mobile-optimized layout were coded, wired, and launched for you <strong>on the house</strong> so you can start earning 50/50 splits with zero upfront cost.
+      </p>
+      <p style="max-width: 650px; margin: 0 auto 14px; color: var(--text-secondary);">
+        You never owe a dime for your standard page setup—but if you're hyped about your new site and want to buy the Lead Systems Architect a coffee, an energy drink, or a steak for the behind-the-scenes coding and setup work, you can toss a thank-you tip straight into my personal Cash App jar below!
+      </p>
+      <a href="https://cash.app/$Radiobee999" target="_blank" rel="noopener noreferrer" class="cashapp-btn">
+        💸 Send a Tip on Cash App: $Radiobee999
+      </a>
+      <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 16px; margin-bottom: 0;">
+        *Completely optional and no strings attached! Any tips sent to <strong>$Radiobee999</strong> are personal gifts of appreciation to the developer and are completely separate from One Nation Republic LLC business services.
+      </p>
+    </section>
+
+    <div class="footer-note">
+      <p>Questions or need help? Email <a href="mailto:onenationtroubleshooting@gmail.com">onenationtroubleshooting@gmail.com</a></p>
+      <p style="margin-top: 10px;">&copy; 2026 One Nation Republic LLC. All Rights Reserved.</p>
+      <p style="margin-top: 8px;">
+        <a href="index.html">&larr; One Nation Main Foundation Page</a> &nbsp;|&nbsp;
+        <a href="partners.html">❖ Partner Program Info</a> &nbsp;|&nbsp;
+        <a href="links.html">❖ Official Links Hub &rarr;</a>
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
